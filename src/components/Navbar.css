@@ -1,0 +1,49 @@
+/* Gradient background */
+.bg-success {
+  background: linear-gradient(90deg, #2e7d32, #43a047, #66bb6a);
+}
+
+/* General link style */
+.nav-link {
+  color: white !important;
+  position: relative;
+  transition: color 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+/* Underline animation */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffeb3b !important;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  background-color: #ffeb3b;
+}
+
+/* Active link */
+.active-link {
+  color: #ffeb3b !important;
+}
+
+.active-link::after {
+  width: 100%;
+  background-color: #ffeb3b;
+}
+
+/* Brand hover glow */
+.navbar-brand:hover {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  transition: text-shadow 0.3s ease;
+}
