@@ -23,7 +23,7 @@ export default function Home() {
             transition={{ duration: 1 }}
             className="fw-bold display-5 d-flex justify-content-center align-items-center gap-2"
           >
-            <Rocket size={40} className="text-warning" />
+            
             Hi, I'm Brian Mugatsia
           </motion.h1>
 

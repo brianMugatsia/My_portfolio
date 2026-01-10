@@ -16,7 +16,7 @@ export default function Skills() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <Wrench size={40} className="text-warning" />
+          <Wrench size={40} className="text-light" />
           Skills & Expertise
         </motion.h1>
         <motion.p

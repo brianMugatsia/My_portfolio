@@ -40,7 +40,7 @@ export default function Projects() {
               animate={{ rotate: [0, 10, -10, 0] }}
               transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
             >
-              <FolderOpen size={40} className="text-warning" />
+              <FolderOpen size={40} className="text-light" />
             </motion.span>
             Projects
           </motion.h1>
@@ -98,7 +98,7 @@ export default function Projects() {
                   transition={{ delay: 0.2, duration: 0.5 }}
                 >
                   <a
-                    href="https://github.com/mugastiabrian/student-management"
+                    href="https://github.com/mugastiabrian/farmers_hub"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-outline-dark btn-sm d-flex align-items-center gap-2"

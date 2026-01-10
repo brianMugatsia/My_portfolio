@@ -25,7 +25,7 @@ export default function About() {
           className="container-fluid"
         >
           <h1 className="fw-bold display-5 d-flex justify-content-center align-items-center gap-2">
-            <Target size={40} className="text-warning" />
+            <Target size={40} className="text-light " />
             About Me
           </h1>
           <p className="lead mt-3">
