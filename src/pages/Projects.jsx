@@ -1,9 +1,10 @@
 import { Github, Globe, FolderOpen } from "lucide-react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import studentImg from "../assets/student-management.jpg";
-import weatherImg from "../assets/weather-app.jpg";
-import portfolioImg from "../assets/portfolio-site.jpg";
+
+import hostel from "../assets/hostel.png";
+import portfolio from "../assets/portfolio.png";
+import farmers from "../assets/farmers.png"
 
 // Animation Variants
 const containerVariants = {
@@ -74,16 +75,16 @@ export default function Projects() {
             >
               <motion.div className="card h-100 text-dark shadow-sm border-0 overflow-hidden">
                 <motion.img
-                  src={studentImg}
+                  src={hostel}
                   className="card-img-top"
                   alt="Student Management System"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.4 }}
                 />
                 <div className="card-body">
-                  <h5 className="card-title fw-bold">Student Management System</h5>
+                  <h5 className="card-title fw-bold">Hostel Booking System</h5>
                   <p className="card-text">
-                    Full-stack app using Spring Boot, React, and MySQL to manage student data with CRUD and responsive UI.
+                    Full-stack app using Spring Boot, React, and MySQL to manage student and hostel owners data  with CRUD and responsive UI.
                   </p>
                   <div className="d-flex flex-wrap gap-2 mt-2">
                     <span className="badge bg-secondary">React</span>
@@ -124,16 +125,16 @@ export default function Projects() {
             >
               <motion.div className="card text-dark h-100 shadow-sm border-0 overflow-hidden">
                 <motion.img
-                  src={weatherImg}
+                  src={farmers}
                   className="card-img-top"
                   alt="Weather App"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.4 }}
                 />
                 <div className="card-body">
-                  <h5 className="card-title fw-bold">Weather App</h5>
+                  <h5 className="card-title fw-bold">Farmers Hub</h5>
                   <p className="card-text">
-                    A React app using the OpenWeather API to fetch real-time updates with a sleek Bootstrap UI.
+                    Farmers Hub Marketplace : Connecting farmers, buyers, and the community. Buy fresh produce ,learn farming tips ,and support local agriculture.
                   </p>
                   <div className="d-flex flex-wrap gap-2 mt-2">
                     <span className="badge bg-secondary">React</span>
@@ -174,7 +175,7 @@ export default function Projects() {
             >
               <motion.div className="card h-100 text-dark shadow-sm border-0 overflow-hidden">
                 <motion.img
-                  src={portfolioImg}
+                  src={portfolio}
                   className="card-img-top"
                   alt="Portfolio Website"
                   whileHover={{ scale: 1.05 }}
