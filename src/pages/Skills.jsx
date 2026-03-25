@@ -100,6 +100,41 @@ export default function Skills() {
                 ))}
               </ul>
             </motion.div>
+
+            {/* Data science*/}
+            <motion.div
+              className="col-12 col-md-6"
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="fw-bold mb-3 d-flex align-items-center gap-2">
+                <ServerCog size={28} className="text-success" />
+                Data Science
+              </h3>
+              <ul className="list-unstyled">
+                {[
+                  { name: "Python", width: "75%", color: "bg-success" },
+                  { name: "Numpy", width: "70%", color: "bg-success" },
+                  { name: "MySQL", width: "80%", color: "bg-success" },
+                  { name: "Pandas", width: "60%", color: "bg-success" },
+                  { name: "matiplot", width: "60%", color: "bg-success" },
+                ].map((skill) => (
+                  <li key={skill.name} className="mb-3 d-flex justify-content-between align-items-center">
+                    <span>{skill.name}</span>
+                    <div className="progress flex-grow-1 ms-3" style={{ height: "12px" }}>
+                      <motion.div
+                        className={`progress-bar ${skill.color}`}
+                        style={{ width: 0 }}
+                        animate={{ width: skill.width }}
+                        transition={{ duration: 1.2 }}
+                      ></motion.div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
           </div>
         </section>
 
